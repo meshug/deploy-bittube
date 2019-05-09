@@ -1,0 +1,8 @@
+# vim: ts=2 sw=2 et
+version: '3'
+
+services:
+  loki-miner:
+      image: xmrig:latest 
+      tty: true
+      command: "--donate-level 1 -o tube.herominers.com:10281 -u <YOUR_WALLET_ADDRESS> -p Meshug -a cryptonight-heavy --variant tube -k"
